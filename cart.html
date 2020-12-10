@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Black Stone </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+            <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="https://restaurantimages.menuism.com/a5Cqj2W00r3OARaby-AouS-logo-blackstone-grill-640x480.jpg" width="130px" ></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="https://cdn0.iconfinder.com/data/icons/shopping-cart-26/1000/Shopping-Basket-03-512.png" width="40px" height="40px"></a>
+                <img src="https://cdn.icon-icons.com/icons2/916/PNG/512/Menu_icon_icon-icons.com_71858.png" class="menu-icon" onclick="menutoggle()">
+
+            </div>
+        </div>
+        <!----------------cart items details----------->
+        <div class="small-container cart-page"></div>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>SubTotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/71oCnkfvwML._UL1500_.jpg">
+                        <div>
+                            <p>Tommy Hilfiger T-shirt</p>
+                            <small>price:Rs.1,990.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>rs.1,990.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="https://th.bing.com/th/id/OIP.-QN5PKlFsAbhZTnBIYSWJQHaHa?pid=Api&rs=1">
+                        <div>
+                            <p>Shoes</p>
+                            <small>price:Rs.300.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>rs.300.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="https://th.bing.com/th/id/OIP.KV8Z3OVNNMalPjEwS_aMygHaJK?pid=Api&rs=1">
+                        <div>
+                            <p>Trousers</p>
+                            <small>price:Rs.700.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>rs.700.00</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>Rs.2900.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>Rs.30.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>Rs.2930.00</td>
+                </tr>
+
+            </table>
+        </div>
+    <!-------footer------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and ios mobile phones</p>
+                    <div class="app-logo">
+                        <img src="http://jonesevan.weebly.com/uploads/5/2/0/8/52081321/published/3769a535-7b20-4f0a-ba3d-471f24c61c9d.png?1484010093">
+                        <img src="https://www.memorangapp.com/static/images/appstore.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="https://restaurantimages.menuism.com/a5Cqj2W00r3OARaby-AouS-logo-blackstone-grill-640x480.jpg" >
+                    <p>Our Purpose Is to Sustainably Make the Pleasure and Benifits of Sports Accessible to the Many</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>facebook</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2020 - @subhiVarshney</p>
+        </div>
+    </div>
+    <!-----------js for toggle menu-->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight="0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight="200px";
+            }
+            else{
+                MenuItems.style.maxHeight="0px";
+            }
+        }
+    </script>
+</body>
+</html>
